@@ -1,0 +1,164 @@
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Miniver&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+    /* Colors */
+    --white-color: #ffffff;
+    --dark-color: #2c2c54;
+    --primary-color: #b488f0;
+    --secondary-color: #d8b4f8;
+    --light-purple-color: #e6ccff;
+    --medium-gray-color: #d1d1e9;
+
+    /* Font size */
+    --font-size-s: 0.9rem;
+    --font-size-n: 1rem;
+    --font-size-m: 1.12rem;
+    --font-size-l: 1.5rem;
+    --font-size-xl: 2rem;
+    --font-size-xxl: 2.3rem;
+
+    /* Font weight */
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+
+    /* Border radius */
+    --border-radius-s: 8px;
+    --border-radius-m: 30px;
+    --border-radius-circle: 50%;
+
+    /* Site max width */
+    --site-max-width: 1300px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+img {
+    width: 100%;
+}
+
+/* Navbar styling */
+header {
+    background-color: var(--primary-color);
+    padding: 10px 0;
+    text-align: center;
+}
+
+.navbar .nav-logo .logo-text {
+    color: var(--white-color);
+    font-size: var(--font-size-xl);
+}
+
+.navbar .nav-menu {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px 0;
+}
+
+.navbar .nav-menu .nav-link {
+    color: var(--white-color);
+    font-size: var(--font-size-m);
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-menu .nav-link:hover {
+    color: var(--light-purple-color);
+}
+
+/* Grid layout for images, videos, and GIFs */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: var(--site-max-width);
+    margin: auto;
+}
+
+.grid-item {
+    background-color: var(--secondary-color);
+    border-radius: var(--border-radius-m);
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.grid-item:hover {
+    transform: scale(1.05);
+}
+
+/* Mejorar la presentación del contenido */
+.content-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background: var(--white-color);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: var(--border-radius-s);
+}
+
+/* Asegurar que imágenes, videos y GIFs tengan el mismo tamaño */
+.media-container img,
+.media-container video {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: var(--border-radius-s);
+}
+
+/* Grid for capybara information */
+main {
+    padding: 20px;
+    max-width: var(--site-max-width);
+    margin: auto;
+}
+
+.intro, .curiosidades, .mas-info {
+    background: var(--white-color);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: var(--border-radius-s);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.intro h1, .curiosidades h2, .mas-info h2 {
+    color: var(--dark-color);
+    margin-bottom: 10px;
+}
+
+.curiosidades ul {
+    padding-left: 20px;
+}
+
+.mas-info a {
+    color: var(--primary-color);
+    font-weight: var(--font-weight-semibold);
+    transition: color 0.3s ease;
+}
+
+.mas-info a:hover {
+    color: var(--secondary-color);
+}
+/* Footer fixed at bottom */

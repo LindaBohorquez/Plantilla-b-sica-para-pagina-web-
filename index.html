@@ -1,37 +1,57 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-0">
-        <title>Aprendiendo HTML basico</title>
-    </head>
-    <body>
-        <lu>
-            <li>
-                <a href="index.html">home</a>
-            </li>
-            <li>
-                <a href="contacto.html">contacto</a>
-            </li>
-        </lu>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="" class="nav-logo">
+                <h2 class="logo-text">Página Web</h2>
+            </a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="imagenes.html" class="nav-link">Imágenes</a>
+                </li>
+                <li class="nav-item">
+                    <a href="GIF.html" class="nav-link">GIF</a>
+                </li>
+                <li class="nav-item">
+                    <a href="videos.html" class="nav-link">Videos</a>
+                </li>
+                
+            </ul>
+        </nav>
+    </header>
 
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JS</li>
-        </ul>
+    <main>
+        <section class="intro">
+            <h1>Los Capibaras: Los Roedores Más Geniales</h1>
+            <p>Los capibaras son los roedores más grandes del mundo y son conocidos por su personalidad amigable. Son originarios de América del Sur y habitan cerca de cuerpos de agua.</p>
+        </section>
 
-        <ol>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JS</li>
-        </ol>
-        
-        <ol>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JS</li>
-        </ol>
+        <section class="curiosidades">
+            <h2>Curiosidades sobre los Capibaras</h2>
+            <ul>
+                <li>Son semiacuáticos y pasan mucho tiempo en el agua.</li>
+                <li>Son animales muy sociables y conviven con otras especies.</li>
+                <li>Se alimentan principalmente de hierbas y plantas acuáticas.</li>
+                <li>Tienen una increíble capacidad para nadar y pueden permanecer bajo el agua por varios minutos.</li>
+            </ul>
+        </section>
 
-        <img alt="foto de gojo" src="gojo.png">
-    </body>
+        <section class="mas-info">
+            <h2>Más Información</h2>
+            <p>Si quieres saber más sobre los capibaras, visita estos enlaces:</p>
+            <ul>
+                <li><a href="https://es.wikipedia.org/wiki/Hydrochoerus_hydrochaeris" target="_blank">Artículo en Wikipedia</a></li>
+                <li><a href="https://www.nationalgeographic.com/animals/mammals/facts/capybara" target="_blank">National Geographic</a></li>
+            </ul>
+        </section>
+    </main>
+
+</body>
 </html>
