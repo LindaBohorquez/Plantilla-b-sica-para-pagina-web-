@@ -128,5 +128,37 @@ header {
     border-radius: var(--border-radius-s);
 }
 
+/* Grid for capybara information */
+main {
+    padding: 20px;
+    max-width: var(--site-max-width);
+    margin: auto;
+}
 
+.intro, .curiosidades, .mas-info {
+    background: var(--white-color);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: var(--border-radius-s);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.intro h1, .curiosidades h2, .mas-info h2 {
+    color: var(--dark-color);
+    margin-bottom: 10px;
+}
+
+.curiosidades ul {
+    padding-left: 20px;
+}
+
+.mas-info a {
+    color: var(--primary-color);
+    font-weight: var(--font-weight-semibold);
+    transition: color 0.3s ease;
+}
+
+.mas-info a:hover {
+    color: var(--secondary-color);
+}
 /* Footer fixed at bottom */
