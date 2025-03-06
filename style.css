@@ -130,12 +130,3 @@ header {
 
 
 /* Footer fixed at bottom */
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: var(--dark-color);
-    color: var(--white-color);
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-}
